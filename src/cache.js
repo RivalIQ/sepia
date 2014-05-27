@@ -264,7 +264,7 @@ module.exports.configure = function(mode) {
         if (forceLive) {
           // Don't write the error to a file, and just send it back to whoever
           // issued the request.
-          playback(undefined, header);
+          playback(header);
         } else {
           writeHeaderFile(header);
           playback();
